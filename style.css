@@ -1,0 +1,721 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: black;
+    color: #e7e7e7;
+    min-height: 100vh;
+    line-height: 1.5;
+}
+
+/* gradient and layer blur */
+
+.image-gradient{
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0.5;
+    z-index: -1;
+
+}
+
+.layer-blur{
+    height: 0;
+    width: 30rem;
+    position: absolute ;
+    top: 20%;
+    right: 0;
+    box-shadow: 0 0 700px 15px white;
+    rotate: -30deg;
+    z-index: -1;
+}
+
+
+/* container */
+
+.container{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 2rem 2rem;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 5rem;
+
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5rem;
+}
+
+header h1{
+    margin: 0;
+    font-size: 3rem;
+    font-weight: 300;
+
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-left: -5%;
+
+}
+
+nav a{
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    transition: color 0.2s ease ;
+    text-decoration: none;
+    color: inherit;
+    z-index: 999;
+
+}
+
+nav a:hover{
+    color: #a7a7a7;
+
+}
+
+.btn-signing{
+    background-color: #a7a7a7;
+    color: black;
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+    z-index: 999;
+
+}
+
+.btn-signing:hover{
+    background-color: white;
+}
+
+/* main content */
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: calc(90vh-6rem);
+
+}
+
+.content{
+    max-width: 40rem;
+    margin-left: 10%;
+    margin-top: 10%;
+    
+}
+
+.tag-box{
+    position: relative;
+    width: 18rem;
+    height: 2.5rem;
+    border-radius: 50px;
+    background: linear-gradient(to right, #656565, #7f42a7, #6600c5,#5300a0, #757575, #656565 );
+    background-size: 200%;
+    animation: animationGradient 2.5s linear infinite;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+
+}
+
+@keyframes animationGradient{
+    to {
+        background-position: 200%;
+
+    }
+}
+
+.tag-box .tag{
+    position: absolute;
+    inset: 3px 3px 3px 3px;
+    background-color: black;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s ease;
+}
+
+.tag-box .tag:hover{
+    color: #5300a0;
+}
+
+.content h1{
+    font-size: 4rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    margin: 2rem 0;
+    line-height: 1.2;
+    text-shadow: 0 0 10px rgba(128, 128, 128, 0.418);
+    
+}
+
+.description{
+    font-size: 1.2rem;
+    letter-spacing: 0.05em;
+    max-width: 35rem;
+    color: gray;
+
+}
+
+.buttons{
+    display: flex;
+    gap: 1rem;
+    margin-top: 3rem;
+}
+
+.btn-get-started{
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid #2a2a2a;
+    padding: 0.7rem 1.2rem;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    transition: background-color 0.2s ease;
+}
+
+.btn-get-started:hover{
+    background-color: #1a1a1a;
+}
+
+.btn-signing-main{
+    text-decoration: none;
+    background-color: lightgray;
+    cursor: pointer;
+    color: black;
+    padding: 0.6rem 2.5rem ;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    transition: background-color 0.2s ease;
+}
+
+.btn-signing-main:hover{
+    background-color: gray;
+}
+
+
+.robot-3d{
+    position: absolute;
+    top: 10%;
+    right: -20%;
+}
+
+
+
+/* services */
+.services {
+  background: radial-gradient(circle at top, #111 0%, #000 60%);
+  padding: 100px 20px;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+}
+
+.services-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  letter-spacing: -0.5px;
+}
+
+.section-subtitle {
+  font-size: 16px;
+  color: #b3b3b3;
+  margin-bottom: 60px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.service-card {
+  background: linear-gradient(180deg, #111, #0a0a0a);
+  border: 1px solid #1f1f1f;
+  border-radius: 18px;
+  padding: 32px 28px;
+  text-align: left;
+  transition: all 0.35s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(140, 0, 255, 0.15),
+    transparent
+  );
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.service-card:hover::before {
+  opacity: 1;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  border-color: #8c00ff;
+  box-shadow: 0 20px 40px rgba(140, 0, 255, 0.2);
+}
+
+.service-card h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: #fff;
+}
+
+.service-card p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #cfcfcf;
+}
+
+/* trust */
+
+.trust {
+  background: linear-gradient(180deg, #000 0%, #070707 100%);
+  padding: 90px 20px;
+  color: #fff;
+}
+
+.trust-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.trust-label {
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #9a9a9a;
+  margin-bottom: 40px;
+}
+
+.trust-stats {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+.stat-card {
+  min-width: 220px;
+}
+
+.stat-card h1 {
+  font-size: 56px;
+  font-weight: 800;
+  margin-bottom: 8px;
+  background: linear-gradient(90deg, #ffffff, #8c00ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.stat-card h1 span {
+  font-size: 52px;
+}
+
+.stat-card p {
+  font-size: 15px;
+  color: #cfcfcf;
+}
+
+.counter {
+  display: inline-block;
+  min-width: 2ch;
+}
+
+
+
+/* about */
+
+/* ================= ABOUT – STYLE 2 ================= */
+
+.about {
+  background: #000;
+  padding: 120px 20px;
+}
+
+.about-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.about-content {
+  max-width: 850px;
+  background: #0c0c0c;
+  border: 1px solid #1f1f1f;
+  border-left: 4px solid #8c00ff;
+  border-radius: 16px;
+  padding: 50px 48px;
+}
+
+/* Title */
+.about-content h2 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 22px;
+  letter-spacing: -0.5px;
+}
+
+/* Lead paragraph */
+.about-lead {
+  font-size: 18px;
+  color: #d6d6d6;
+  margin-bottom: 26px;
+  line-height: 1.6;
+}
+
+/* Body text */
+.about-content p {
+  font-size: 15px;
+  line-height: 1.75;
+  color: #bdbdbd;
+  margin-bottom: 18px;
+}
+
+/* Points */
+.about-points {
+  margin-top: 32px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 14px;
+}
+
+.about-points span {
+  font-size: 14px;
+  color: #fff;
+  opacity: 0.9;
+  padding-left: 18px;
+  position: relative;
+}
+
+/* Custom check */
+.about-points span::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #8c00ff;
+}
+
+
+/* ================= TESTIMONIALS ================= */
+
+.testimonials {
+  background: #000;
+  padding: 110px 20px;
+}
+
+.testimonials-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.testimonials-title {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.testimonials-subtitle {
+  font-size: 16px;
+  color: #b3b3b3;
+  margin-bottom: 60px;
+}
+
+/* Grid */
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+/* Card — SAME AS SERVICE CARD */
+/* ================= TESTIMONIAL CARD – SERVICE STYLE ================= */
+
+.testimonial-card {
+  background: linear-gradient(180deg, #111, #0a0a0a);
+  border: 1px solid #1f1f1f;
+  border-radius: 18px;
+  padding: 32px 28px;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.35s ease;
+}
+
+/* Glow sweep */
+.testimonial-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(140, 0, 255, 0.15),
+    transparent
+  );
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.testimonial-card:hover::before {
+  opacity: 1;
+}
+
+/* Hover lift + glow */
+.testimonial-card:hover {
+  transform: translateY(-10px);
+  border-color: #8c00ff;
+  box-shadow: 0 20px 40px rgba(140, 0, 255, 0.2);
+}
+
+
+/* Text */
+.testimonial-text {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #d0d0d0;
+  margin-bottom: 24px;
+}
+
+/* Author */
+.testimonial-author {
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial-author .name {
+  font-size: 15px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.testimonial-author .role {
+  font-size: 13px;
+  color: #9a9a9a;
+}
+
+
+
+/* ================= FOOTER ================= */
+
+.footer {
+  background: #000;
+  border-top: 1px solid #1f1f1f;
+  padding: 70px 20px 30px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto 40px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 40px;
+}
+
+/* ================= BRAND ================= */
+
+.footer-brand h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.footer-brand p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #bdbdbd;
+  max-width: 320px;
+}
+
+/* ================= LINKS ================= */
+
+.footer-links h4 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.footer-links a {
+  position: relative;
+  display: block;
+  width: fit-content;
+  font-size: 14px;
+  color: #bdbdbd;
+  text-decoration: none;
+  margin-bottom: 10px;
+  transition: color 0.25s ease;
+}
+
+/* Gradient underline (same brand glow) */
+.footer-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(140, 0, 255, 0.9),
+    transparent
+  );
+  opacity: 0;
+  transform: scaleX(0);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #ffffff;
+}
+
+.footer-links a:hover::after {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+/* ================= BOTTOM ================= */
+
+.footer-bottom {
+  border-top: 1px solid #1f1f1f;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.footer-bottom p {
+  font-size: 13px;
+  color: #9a9a9a;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-brand p {
+    max-width: 100%;
+  }
+}
+
+
+
+
+
+/* tablet responsive */
+
+@media (max-width:1300px){
+    header{
+        padding: 1rem 0.5rem;
+
+    }
+    .content{
+        margin-top: 85%;
+
+    }
+
+    .robot-3d{
+        scale: 0.8;
+        top: -20%;
+        right: 2%;
+    }
+}
+
+
+/* mobile responsive */
+
+@media (max-width: 768px){
+    header{
+        padding: 1rem 0.1rem;
+
+    }
+
+    nav{
+        display: none;
+    }
+
+    header h1{
+        font-size: 2rem;
+    }
+
+    .btn-signing{
+        padding: 0.6rem 1.5rem;
+    }
+
+    .content{
+        margin-top: 25rem;
+        max-width: 30rem;
+        margin-left: 10%;
+    }
+
+    .robot-3d{
+        scale: 0.5;
+        top: -25%;
+        right: 0;
+    }
+
+    .tag-box{
+        width: 12rem;
+    }
+
+    .content h1{
+        font-size: 2.5rem;
+    }
+
+    .description{
+        font-size: 1rem;
+    }
+
+    .btn-get-started{
+        font-size: 0.8rem;
+        padding: 0.5rem 1.2rem;
+    }
+
+    .btn-signing-main{
+        font-size: 0.8rem;
+        padding: 0.8rem 2rem;
+    }
+}
