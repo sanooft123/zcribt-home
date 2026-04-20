@@ -17,18 +17,26 @@
   <!-- HERO -->
   <div class="container">
     <header>
-      <h1 data-aos="fade-down">ZCRIBT</h1>
+      <h1>ZCRIBT</h1>
 
-      <nav>
-        <a href="#services" data-aos="fade-down">SERVICES</a>
-        <a href="#portfolio" data-aos="fade-down">SHOWCASE</a>
-        <a href="#about" data-aos="fade-down">ABOUT</a>
-        <a href="#workflow" data-aos="fade-down">WORKFLOW</a>
+      <!-- NAV -->
+      <nav class="nav-links">
+        <a href="#services" onclick="toggleMenu()">SERVICES</a>
+        <a href="#portfolio" onclick="toggleMenu()">SHOWCASE</a>
+        <a href="#about" onclick="toggleMenu()">ABOUT</a>
+        <a href="#workflow" onclick="toggleMenu()">WORKFLOW</a>
       </nav>
 
-      <button class="btn-signing" onclick="document.querySelector('.contact').scrollIntoView({behavior:'smooth'})">
+      <!-- CONTACT BUTTON -->
+      <button class="btn-signing"
+        onclick="document.querySelector('.contact').scrollIntoView({behavior:'smooth'})">
         Contact Us
       </button>
+
+      <!-- HAMBURGER -->
+      <div class="hamburger" onclick="toggleMenu()">
+        ☰
+      </div>
     </header>
 
     <main>
@@ -416,6 +424,12 @@
 
 
   <!-- Scripts -->
+
+  <script>
+    function toggleMenu() {
+      document.querySelector(".nav-links").classList.toggle("active");
+    }
+  </script>
   <script type="module"
     src="https://unpkg.com/@splinetool/viewer@1.12.39/build/spline-viewer.js">
   </script>
