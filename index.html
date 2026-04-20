@@ -20,13 +20,15 @@
       <h1 data-aos="fade-down">ZCRIBT</h1>
 
       <nav>
-        <a data-aos="fade-down">COMPANY</a>
-        <a data-aos="fade-down">FEATURES</a>
-        <a data-aos="fade-down">RESOURCES</a>
-        <a data-aos="fade-down">DOCS</a>
+        <a href="#services" data-aos="fade-down">SERVICES</a>
+        <a href="#portfolio" data-aos="fade-down">SHOWCASE</a>
+        <a href="#about" data-aos="fade-down">ABOUT</a>
+        <a href="#workflow" data-aos="fade-down">WORKFLOW</a>
       </nav>
 
-      <button data-aos="fade-down" class="btn-signing">Contact Us</button>
+      <button class="btn-signing" onclick="document.querySelector('.contact').scrollIntoView({behavior:'smooth'})">
+        Contact Us
+      </button>
     </header>
 
     <main>
@@ -45,8 +47,8 @@
         </p>
 
         <div class="buttons" data-aos="fade-up">
-          <a class="btn-get-started">Portfolio &gt;</a>
-          <a class="btn-signing-main">Get Started &gt;</a>
+          <!-- <a class="btn-get-started">Portfolio &gt;</a> -->
+          <a href="tel:+919744827013" class="btn-signing-main">Call Now &gt;</a>
         </div>
       </div>
     </main>
@@ -61,7 +63,7 @@
   </div>
 
   <!-- SERVICES (NO AOS – FAST) -->
-  <section class="services">
+  <section id="services" class="services">
     <div class="services-container">
       <h2 class="section-title">Our Solutions</h2>
       <p class="section-subtitle">
@@ -85,6 +87,16 @@
         </div>
 
         <div class="service-card">
+          <h3>Personal Portfolio</h3>
+          <p>Secure, conversion-optimized online stores.</p>
+        </div>
+        <div class="service-card">
+          <h3>E-Commerce</h3>
+          <p>Secure, conversion-optimized online stores.</p>
+        </div>
+        
+
+        <div class="service-card">
           <h3>Dynamic Landing Pages</h3>
           <p>Fast, SEO-friendly marketing pages.</p>
         </div>
@@ -101,7 +113,7 @@
   </section>
 
   <!-- TRUST -->
-<section class="trust">
+<section id="trust" class="trust">
   <div class="trust-container">
     <p class="trust-label">Trusted by fast-moving brands</p>
 
@@ -124,9 +136,117 @@
 </section>
 
 
+  <!-- RECENT WORKS -->
+  <section id="portfolio" class="portfolio">
+    <div class="portfolio-container">
+      <h2 class="section-title">Our Recent Works</h2>
+      <p class="section-subtitle">
+        A glimpse of the products and solutions we’ve built for our clients.
+      </p>
+
+      <div class="portfolio-grid">
+
+        <!-- Project Card -->
+        <a href="https://your-project-link.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="portfolio-card">
+
+          <img src="daralnuzum.png" alt="Service Booking Platform" />
+
+          <div class="portfolio-content">
+            <h3>Service Booking Platform</h3>
+            <p>
+              A full-stack MERN platform for booking services like salons,
+              electricians, and home cleaning with real-time availability.
+            </p>
+            <span class="portfolio-link">View Project →</span>
+          </div>
+
+        </a>
+
+        <a href="https://your-project-link.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="portfolio-card">
+
+          <img src="daralnuzum.png" alt="Service Booking Platform" />
+
+          <div class="portfolio-content">
+            <h3>Service Booking Platform</h3>
+            <p>
+              A full-stack MERN platform for booking services like salons,
+              electricians, and home cleaning with real-time availability.
+            </p>
+            <span class="portfolio-link">View Project →</span>
+          </div>
+
+        </a>
+
+
+        <a href="https://your-project-link.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="portfolio-card">
+
+          <img src="daralnuzum.png" alt="Service Booking Platform" />
+
+          <div class="portfolio-content">
+            <h3>Service Booking Platform</h3>
+            <p>
+              A full-stack MERN platform for booking services like salons,
+              electricians, and home cleaning with real-time availability.
+            </p>
+            <span class="portfolio-link">View Project →</span>
+          </div>
+
+        </a>
+
+
+        <a href="https://your-project-link.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="portfolio-card">
+
+          <img src="daralnuzum.png" alt="Service Booking Platform" />
+
+          <div class="portfolio-content">
+            <h3>Service Booking Platform</h3>
+            <p>
+              A full-stack MERN platform for booking services like salons,
+              electricians, and home cleaning with real-time availability.
+            </p>
+            <span class="portfolio-link">View Project →</span>
+          </div>
+
+        </a>
+
+
+        <a href="https://your-project-link.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="portfolio-card">
+
+          <img src="daralnuzum.png" alt="Service Booking Platform" />
+
+          <div class="portfolio-content">
+            <h3>Service Booking Platform</h3>
+            <p>
+              A full-stack MERN platform for booking services like salons,
+              electricians, and home cleaning with real-time availability.
+            </p>
+            <span class="portfolio-link">View Project →</span>
+          </div>
+
+        </a>
+
+      </div>
+    </div>
+  </section>
+
 
   <!-- ABOUT -->
-    <section class="about">
+    <section id="about" class="about">
     <div class="about-container">
         <div class="about-content">
         <h2>About ZCRIBT Solutions</h2>
@@ -159,7 +279,7 @@
 
     <!-- testimonials -->
 
-    <section class="testimonials">
+    <section id="testimonials" class="testimonials">
   <div class="testimonials-container">
     <h2 class="testimonials-title">What Our Clients Say</h2>
     <p class="testimonials-subtitle">
@@ -203,9 +323,56 @@
   </div>
 </section>
 
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <div class="contact-container">
+    
+    <h2 class="section-title">Let’s Build Something Great</h2>
+    <p class="section-subtitle">
+      Have a project in mind? Tell us what you need and we’ll get back to you.
+    </p>
+
+    <div class="contact-grid">
+
+      <!-- LEFT INFO -->
+      <div class="contact-info">
+        <h3>Get in Touch</h3>
+        <p>We usually respond within 24 hours.</p>
+
+        <div class="contact-item">
+          <span>📧</span>
+          <p>zcribtsolutions@gmail.com</p>
+        </div>
+
+        <div class="contact-item">
+          <span>📞</span>
+          <p>+91 9XXXXXXXXX</p>
+        </div>
+
+        <div class="contact-item">
+          <span>📍</span>
+          <p>Kerala, India</p>
+        </div>
+      </div>
+
+      <!-- FORM -->
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <input type="text" placeholder="Project Type (Web / AI / App)" />
+        <textarea rows="5" placeholder="Tell us about your project..." required></textarea>
+        
+        <button type="submit">Send Message →</button>
+      </form>
+
+    </div>
+  </div>
+</section>
+
 <!-- footer -->
 
-<footer class="footer">
+<footer id="footer" class="footer">
   <div class="footer-container">
 
     <!-- Brand -->
