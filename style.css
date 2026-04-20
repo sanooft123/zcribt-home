@@ -128,11 +128,10 @@ nav a:hover {
   font-size: 1.8rem;
   cursor: pointer;
 }
-
 /* MOBILE NAV */
 @media (max-width: 768px) {
 
-  /* hide desktop nav + button */
+  /* NAV MENU */
   .nav-links {
     position: absolute;
     top: 70px;
@@ -142,33 +141,29 @@ nav a:hover {
     background: rgba(0, 0, 0, 0.95);
     backdrop-filter: blur(10px);
 
+    display: none;
     flex-direction: column;
     align-items: center;
     gap: 20px;
 
     padding: 20px 0;
-
-    display: none;
   }
 
   .nav-links.active {
     display: flex;
   }
 
+  /* HIDE CONTACT BUTTON */
   .btn-signing {
     display: none;
   }
 
+  /* SHOW HAMBURGER */
   .hamburger {
     display: block;
   }
-}
-/* MOBILE FIX (prevents overlap on small screens) */
-@media (max-width: 768px) {
-  nav {
-    display: none;
-  }
 
+  /* SMALL HEADER ADJUST */
   header {
     padding: 12px 20px;
   }
