@@ -50,7 +50,7 @@ html {
   padding-top: 90px; /* prevents content hiding under fixed navbar */
   position: relative;
   overflow: hidden;
-  margin-bottom: 5rem;
+  margin-bottom: 1rem;
 }
 
 /* HEADER (FIXED NAVBAR) */
@@ -60,6 +60,7 @@ header {
   left: 0;
   width: 100%;
   z-index: 1000;
+  height: 60px;
 
   display: flex;
   align-items: center;
@@ -130,18 +131,67 @@ nav a:hover {
 }
 
 
-header{
-    padding: 12px 16px; /* clean mobile spacing */
+/* ================= MOBILE HEADER ================= */
+@media (max-width: 768px) {
+
+  header {
+    padding: 12px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  /* HAMBURGER */
+  .hamburger {
+    display: block;
+    font-size: 1.6rem;
+  }
+
+  /* HIDE CONTACT BUTTON */
+  .btn-signing {
+    display: none;
+  }
+
+  /* NAV DROPDOWN */
+  .nav-links {
+    position: fixed; /* 🔥 better than absolute */
+    top: 60px;
+    left: 0;
+    width: 100%;
+
+    background: rgba(0, 0, 0, 0.98);
+    backdrop-filter: blur(12px);
+
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    padding: 25px 0;
+
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links a {
+    font-size: 16px;
+  }
 }
 
 /* main content */
 
-main{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-height: calc(90vh-6rem);
-
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .content{
@@ -250,11 +300,67 @@ main{
 }
 
 
+/* ================= HERO MOBILE ================= */
+@media (max-width: 768px) {
+
+  main {
+    align-items: center;
+    text-align: center;
+  }
+
+  .content {
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-bottom: -10rem;
+    max-width: 90%;
+  }
+
+  /* TAG */
+  .tag-box {
+    margin: 0 auto;
+    width: 12rem;
+    height: 5rem;
+  }
+
+  /* TITLE */
+  .content h1 {
+    font-size: 2.2rem;
+    line-height: 1.3;
+    margin: 1.5rem 0;
+  }
+
+  /* DESCRIPTION */
+  .description {
+    font-size: 0.95rem;
+    max-width: 100%;
+  }
+
+  /* BUTTONS */
+  .buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .btn-signing-main {
+    padding: 0.7rem 1.8rem;
+    font-size: 0.9rem;
+  }
+
+  /* 3D ROBOT */
+  .robot-3d {
+    position: relative;
+    top: 70px;
+    right: -150px;
+    scale: 1.2;
+    margin-top: 2rem;
+  }
+}
+
 
 /* services */
 .services {
   background: radial-gradient(circle at top, #111 0%, #000 60%);
-  padding: 100px 20px;
+  padding: 50px 20px;
   color: #fff;
   font-family: "Inter", sans-serif;
 }
@@ -670,29 +776,6 @@ main{
   .footer-brand p {
     max-width: 100%;
   }
-}
-
-
-
-
-
-/* tablet responsive */
-
-@media (max-width:1300px){
-    header{
-        padding: 1rem 0.5rem;
-
-    }
-    .content{
-        margin-top: 85%;
-
-    }
-
-    .robot-3d{
-        scale: 0.8;
-        top: -20%;
-        right: 2%;
-    }
 }
 
 
