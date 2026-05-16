@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>ZCRIBT Solutions</title>
 
   <link rel="stylesheet" href="style.css" />
@@ -16,6 +17,7 @@
 
   <!-- HERO -->
   <div class="container">
+
     <header>
       <h1>ZCRIBT</h1>
 
@@ -25,10 +27,12 @@
         <a href="#portfolio" onclick="toggleMenu()">SHOWCASE</a>
         <a href="#about" onclick="toggleMenu()">ABOUT</a>
         <a href="#workflow" onclick="toggleMenu()">WORKFLOW</a>
+        <a href="#reviews" onclick="toggleMenu()">REVIEWS</a>
       </nav>
 
       <!-- CONTACT BUTTON -->
-      <button class="btn-signing"
+      <button
+        class="btn-signing"
         onclick="document.querySelector('.contact').scrollIntoView({behavior:'smooth'})">
         Contact Us
       </button>
@@ -41,6 +45,7 @@
 
     <main>
       <div class="content">
+
         <div class="tag-box" data-aos="fade-up">
           <div class="tag">INTRODUCING ZCRIBT SOLUTIONS</div>
         </div>
@@ -55,31 +60,38 @@
         </p>
 
         <div class="buttons" data-aos="fade-up">
-          <!-- <a class="btn-get-started">Portfolio &gt;</a> -->
-          <a href="tel:+919744827013" class="btn-signing-main">Call Now &gt;</a>
+          <a href="tel:+919744827013" class="btn-signing-main">
+            Call Now >
+          </a>
         </div>
+
       </div>
     </main>
 
-    <!-- Spline (ONLY HERO) -->
+    <!-- Spline -->
     <spline-viewer
-        data-aos="fade-up"
+      data-aos="fade-up"
       class="robot-3d"
       loading="lazy"
       url="https://prod.spline.design/kNhSGH3MtAqVlLa1/scene.splinecode">
     </spline-viewer>
+
   </div>
 
-  <!-- SERVICES (NO AOS – FAST) -->
+  <!-- SERVICES -->
   <section id="services" class="services">
+
     <div class="services-container">
+
       <h2 class="section-title">Our Solutions</h2>
+
       <p class="section-subtitle">
         We design and build scalable digital products for modern businesses.
       </p>
 
       <div class="services-grid">
-        <div class="service-card"> 
+
+        <div class="service-card">
           <h3>Static / Dynamic Web Design</h3>
           <p>Modern, responsive, user-focused designs.</p>
         </div>
@@ -98,81 +110,91 @@
           <h3>Personal Portfolio</h3>
           <p>Secure, conversion-optimized online stores.</p>
         </div>
+
         <div class="service-card">
           <h3>E-Commerce</h3>
           <p>Secure, conversion-optimized online stores.</p>
         </div>
-        
 
         <div class="service-card">
           <h3>Dynamic Landing Pages</h3>
           <p>Fast, SEO-friendly marketing pages.</p>
         </div>
+
         <div class="service-card">
           <h3>Automations</h3>
           <p>Fast, SEO-friendly marketing pages.</p>
         </div>
+
         <div class="service-card">
           <h3>Agentic AI</h3>
           <p>Fast, SEO-friendly marketing pages.</p>
         </div>
+
       </div>
     </div>
   </section>
 
   <!-- TRUST -->
-<section id="trust" class="trust">
-  <div class="trust-container">
-    <p class="trust-label">Trusted by fast-moving brands</p>
+  <section id="trust" class="trust">
 
-    <div class="trust-stats">
-      <div class="stat-card">
-        <h1>
-          <span class="counter" data-count="2">0</span><span>+</span>
-        </h1>
-        <p>Happy Clients</p>
-      </div>
+    <div class="trust-container">
 
-      <div class="stat-card">
-        <h1>
-          <span class="counter" data-count="1">0</span><span>+</span>
-        </h1>
-        <p>Ongoing Projects</p>
+      <p class="trust-label">Trusted by fast-moving brands</p>
+
+      <div class="trust-stats">
+
+        <div class="stat-card">
+          <h1>
+            <span class="counter" data-count="2">0</span><span>+</span>
+          </h1>
+          <p>Happy Clients</p>
+        </div>
+
+        <div class="stat-card">
+          <h1>
+            <span class="counter" data-count="1">0</span><span>+</span>
+          </h1>
+          <p>Ongoing Projects</p>
+        </div>
+
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-
-  <!-- RECENT WORKS -->
+  <!-- PORTFOLIO -->
   <section id="portfolio" class="portfolio">
+
     <div class="portfolio-container">
+
       <h2 class="section-title">Our Recent Works</h2>
+
       <p class="section-subtitle">
         A glimpse of the products and solutions we’ve built for our clients.
       </p>
 
       <div class="portfolio-grid">
 
-        <!-- Project Card -->
-        <a href="https://daralnuzum.com"
+        <!-- Project -->
+        <a
+          href="https://daralnuzum.com"
           target="_blank"
           rel="noopener noreferrer"
           class="portfolio-card">
 
-          <img src="daralnuzum.png" alt="Service Booking Platform" />
+          <img src="daralnuzum.png" alt="Dar Al Nuzum" />
 
           <div class="portfolio-content">
             <h3>Dar Al Nuzum</h3>
-            <p>
-              A full-stack platform using React and Django
-            </p>
+            <p>A full-stack platform using React and Django</p>
             <span class="portfolio-link">View Project →</span>
           </div>
 
         </a>
 
-        <a href="https://bakefills.in"
+        <!-- Project -->
+        <a
+          href="https://bakefills.in"
           target="_blank"
           rel="noopener noreferrer"
           class="portfolio-card">
@@ -181,9 +203,7 @@
 
           <div class="portfolio-content">
             <h3>Bakefills</h3>
-            <p>
-              A landing platform for booking baking products using React .
-            </p>
+            <p>A landing platform for baking products using React.</p>
             <span class="portfolio-link">View Project →</span>
           </div>
 
@@ -193,176 +213,278 @@
     </div>
   </section>
 
-
   <!-- ABOUT -->
-    <section id="about" class="about">
+  <section id="about" class="about">
+
     <div class="about-container">
-        <div class="about-content">
+
+      <div class="about-content">
+
         <h2>About ZCRIBT Solutions</h2>
+
         <p class="about-lead">
-            ZCRIBT Solutions is a modern digital solutions company focused on building
-            high-quality web products for startups, businesses, and growing brands.
+          ZCRIBT Solutions is a modern digital solutions company focused on building
+          high-quality web products for startups, businesses, and growing brands.
         </p>
 
         <p>
-            We specialize in designing and developing scalable, secure, and
-            performance-driven applications. From visually stunning websites to
-            complex web platforms, our goal is to turn ideas into reliable digital
-            solutions.
+          We specialize in designing and developing scalable, secure, and
+          performance-driven applications.
         </p>
 
         <p>
-            Our team follows clean architecture, modern technologies, and agile
-            development practices to deliver solutions that grow with your business.
+          Our team follows clean architecture, modern technologies, and agile
+          development practices to deliver solutions that grow with your business.
         </p>
 
         <div class="about-points">
-            <span>✔ Modern UI/UX Design</span>
-            <span>✔ Scalable Web Applications</span>
-            <span>✔ Business-Focused Solutions</span>
-            <span>✔ Long-Term Support</span>
+          <span>✔ Modern UI/UX Design</span>
+          <span>✔ Scalable Web Applications</span>
+          <span>✔ Business-Focused Solutions</span>
+          <span>✔ Long-Term Support</span>
         </div>
-        </div>
-    </div>
-</section>
 
-    <!-- testimonials -->
-
-    <section id="testimonials" class="testimonials">
-  <div class="testimonials-container">
-    <h2 class="testimonials-title">What Our Clients Say</h2>
-    <p class="testimonials-subtitle">
-      Trusted by startups, businesses, and growing brands worldwide.
-    </p>
-
-    <div class="testimonials-grid">
-      <div class="testimonial-card">
-        <p class="testimonial-text">
-          “ZCRIBT Solutions delivered exactly what we needed. Clean design,
-          scalable architecture, and excellent support throughout the project.”
-        </p>
-        <div class="testimonial-author">
-          <span class="name">Rahul Menon</span>
-          <span class="role">Founder, StartupHub</span>
-        </div>
-      </div>
-
-      <div class="testimonial-card">
-        <p class="testimonial-text">
-          “Professional, fast, and reliable. Our website performance and user
-          experience improved significantly after working with ZCRIBT.”
-        </p>
-        <div class="testimonial-author">
-          <span class="name">Ayesha Khan</span>
-          <span class="role">Marketing Lead, Growthify</span>
-        </div>
-      </div>
-
-      <div class="testimonial-card">
-        <p class="testimonial-text">
-          “From planning to deployment, the team was transparent and highly
-          skilled. Highly recommended for serious digital products.”
-        </p>
-        <div class="testimonial-author">
-          <span class="name">Arjun Nair</span>
-          <span class="role">CTO, NexaTech</span>
-        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" class="testimonials">
 
-<!-- CONTACT -->
-<section id="contact" class="contact">
-  <div class="contact-container">
-    
-    <h2 class="section-title">Let’s Build Something Great</h2>
-    <p class="section-subtitle">
-      Have a project in mind? Tell us what you need and we’ll get back to you.
-    </p>
+    <div class="testimonials-container">
 
-    <div class="contact-grid">
+      <h2 class="testimonials-title">What Our Clients Say</h2>
 
-      <!-- LEFT INFO -->
-      <div class="contact-info">
-        <h3>Get in Touch</h3>
-        <p>We usually respond within 24 hours.</p>
-
-        <div class="contact-item">
-          <span>📧</span>
-          <p>zcribtsolutions@gmail.com</p>
-        </div>
-
-        <div class="contact-item">
-          <span>📞</span>
-          <p>+91 9XXXXXXXXX</p>
-        </div>
-
-        <div class="contact-item">
-          <span>📍</span>
-          <p>Kerala, India</p>
-        </div>
-      </div>
-
-      <!-- FORM -->
-      <form class="contact-form">
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <input type="text" placeholder="Project Type (Web / AI / App)" />
-        <textarea rows="5" placeholder="Tell us about your project..." required></textarea>
-        
-        <button type="submit">Send Message →</button>
-      </form>
-
-    </div>
-  </div>
-</section>
-
-<!-- footer -->
-
-<footer id="footer" class="footer">
-  <div class="footer-container">
-
-    <!-- Brand -->
-    <div class="footer-brand">
-      <h3>ZCRIBT</h3>
-      <p>
-        Building scalable, modern digital solutions for startups and businesses.
+      <p class="testimonials-subtitle">
+        Trusted by startups, businesses, and growing brands worldwide.
       </p>
+
+      <div class="testimonials-grid">
+
+        <div class="testimonial-card">
+          <p class="testimonial-text">
+            “ZCRIBT Solutions delivered exactly what we needed.”
+          </p>
+
+          <div class="testimonial-author">
+            <span class="name">Rahul Menon</span>
+            <span class="role">Founder, StartupHub</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <p class="testimonial-text">
+            “Professional, fast, and reliable.”
+          </p>
+
+          <div class="testimonial-author">
+            <span class="name">Ayesha Khan</span>
+            <span class="role">Marketing Lead, Growthify</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <p class="testimonial-text">
+            “Highly recommended for serious digital products.”
+          </p>
+
+          <div class="testimonial-author">
+            <span class="name">Arjun Nair</span>
+            <span class="role">CTO, NexaTech</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEW VIDEOS -->
+  <section id="reviews" class="reviews">
+
+    <div class="reviews-container">
+
+      <h2 class="reviews-title">Client Review Videos</h2>
+
+      <p class="reviews-subtitle">
+        Hear directly from our clients about their experience working with
+        ZCRIBT Solutions.
+      </p>
+
+      <div class="reviews-grid">
+
+        <!-- Review Video -->
+        <div class="review-card">
+
+          <div class="video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+              title="Client Review Video"
+              frameborder="0"
+              allowfullscreen>
+            </iframe>
+          </div>
+
+          <div class="review-content">
+            <h3>Rahul Menon</h3>
+            <p>
+              “Excellent experience working with the team. Professional delivery
+              and modern UI.”
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Review Video -->
+        <div class="review-card">
+
+          <div class="video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+              title="Client Review Video"
+              frameborder="0"
+              allowfullscreen>
+            </iframe>
+          </div>
+
+          <div class="review-content">
+            <h3>Ayesha Khan</h3>
+            <p>
+              “Their workflow and communication were outstanding.”
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Review Video -->
+        <div class="review-card">
+
+          <div class="video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+              title="Client Review Video"
+              frameborder="0"
+              allowfullscreen>
+            </iframe>
+          </div>
+
+          <div class="review-content">
+            <h3>Arjun Nair</h3>
+            <p>
+              “ZCRIBT Solutions helped us launch faster with a scalable product.”
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+
+    <div class="contact-container">
+
+      <h2 class="section-title">Let’s Build Something Great</h2>
+
+      <p class="section-subtitle">
+        Have a project in mind? Tell us what you need and we’ll get back to you.
+      </p>
+
+      <div class="contact-grid">
+
+        <!-- INFO -->
+        <div class="contact-info">
+
+          <h3>Get in Touch</h3>
+
+          <p>We usually respond within 24 hours.</p>
+
+          <div class="contact-item">
+            <span>📧</span>
+            <p>zcribtsolutions@gmail.com</p>
+          </div>
+
+          <div class="contact-item">
+            <span>📞</span>
+            <p>+91 9XXXXXXXXX</p>
+          </div>
+
+          <div class="contact-item">
+            <span>📍</span>
+            <p>Kerala, India</p>
+          </div>
+
+        </div>
+
+        <!-- FORM -->
+        <form class="contact-form">
+
+          <input type="text" placeholder="Your Name" required />
+
+          <input type="email" placeholder="Your Email" required />
+
+          <input
+            type="text"
+            placeholder="Project Type (Web / AI / App)" />
+
+          <textarea
+            rows="5"
+            placeholder="Tell us about your project..."
+            required>
+          </textarea>
+
+          <button type="submit">
+            Send Message →
+          </button>
+
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer" class="footer">
+
+    <div class="footer-container">
+
+      <div class="footer-brand">
+        <h3>ZCRIBT</h3>
+        <p>
+          Building scalable, modern digital solutions for startups and businesses.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Company</h4>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Careers</a>
+        <a href="#">Contact</a>
+      </div>
+
+      <div class="footer-links">
+        <h4>Resources</h4>
+        <a href="#">Docs</a>
+        <a href="#">Blog</a>
+        <a href="#">Support</a>
+        <a href="#">FAQ</a>
+      </div>
+
+      <div class="footer-links">
+        <h4>Legal</h4>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+
     </div>
 
-    <!-- Links -->
-    <div class="footer-links">
-      <h4>Company</h4>
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Careers</a>
-      <a href="#">Contact</a>
+    <div class="footer-bottom">
+      <p>© 2026 ZCRIBT Solutions. All rights reserved.</p>
     </div>
 
-    <div class="footer-links">
-      <h4>Resources</h4>
-      <a href="#">Docs</a>
-      <a href="#">Blog</a>
-      <a href="#">Support</a>
-      <a href="#">FAQ</a>
-    </div>
-
-    <div class="footer-links">
-      <h4>Legal</h4>
-      <a href="#">Privacy Policy</a>
-      <a href="#">Terms of Service</a>
-    </div>
-
-  </div>
-
-  <div class="footer-bottom">
-    <p>© 2026 ZCRIBT Solutions. All rights reserved.</p>
-  </div>
-</footer>
-
-
+  </footer>
 
   <!-- Scripts -->
 
@@ -371,7 +493,9 @@
       document.querySelector(".nav-links").classList.toggle("active");
     }
   </script>
-  <script type="module"
+
+  <script
+    type="module"
     src="https://unpkg.com/@splinetool/viewer@1.12.39/build/spline-viewer.js">
   </script>
 
@@ -386,48 +510,62 @@
     });
 
     const spline = document.querySelector("spline-viewer");
+
     window.addEventListener("scroll", () => {
       spline.style.display =
-        window.scrollY > window.innerHeight * 0.8 ? "none" : "block";
+        window.scrollY > window.innerHeight * 0.8
+          ? "none"
+          : "block";
     });
   </script>
 
   <script>
-  const counters = document.querySelectorAll(".counter");
-  let started = false;
+    const counters = document.querySelectorAll(".counter");
 
-  const startCount = () => {
-    counters.forEach(counter => {
-      const target = +counter.getAttribute("data-count");
-      let count = 0;
-      const increment = Math.ceil(target / 60); // speed control
+    let started = false;
 
-      const update = () => {
-        count += increment;
-        if (count >= target) {
-          counter.innerText = target;
-        } else {
-          counter.innerText = count;
-          requestAnimationFrame(update);
+    const startCount = () => {
+
+      counters.forEach(counter => {
+
+        const target = +counter.getAttribute("data-count");
+
+        let count = 0;
+
+        const increment = Math.ceil(target / 60);
+
+        const update = () => {
+
+          count += increment;
+
+          if (count >= target) {
+            counter.innerText = target;
+          } else {
+            counter.innerText = count;
+            requestAnimationFrame(update);
+          }
+        };
+
+        update();
+      });
+    };
+
+    const observer = new IntersectionObserver(entries => {
+
+      entries.forEach(entry => {
+
+        if (entry.isIntersecting && !started) {
+
+          started = true;
+
+          startCount();
         }
-      };
+      });
 
-      update();
-    });
-  };
+    }, { threshold: 0.5 });
 
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting && !started) {
-        started = true;
-        startCount();
-      }
-    });
-  }, { threshold: 0.5 });
-
-  observer.observe(document.querySelector(".trust"));
-</script>
-
+    observer.observe(document.querySelector(".trust"));
+  </script>
 
 </body>
 </html>
