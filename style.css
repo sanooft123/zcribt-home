@@ -322,6 +322,12 @@ main {
     height: 5rem;
   }
 
+    .tag-box {
+    margin: 0 auto;
+    width: 12rem;
+    height: 5rem;
+  }
+
   /* TITLE */
   .content h1 {
     font-size: 2.2rem;
